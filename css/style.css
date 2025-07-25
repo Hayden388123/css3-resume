@@ -74,16 +74,100 @@ Title1&Celebrity
     font-weight: normal;
 }
 
+/* ============
+   Animation
+==============*/
 .circle1 {
     border-radius: 100%;
-    border: 15px solid #f89e59;
+    border: 15px solid #bc7036;
     width: 450px;
     height: 450px;
     position: absolute;
-    top: 0;
-    left: 80%;
+    top: 10%;
+    left: 70%;
     z-index: -1;
-    animation: move 10s ease-in infinite;
+    animation: circle1 10s infinite;
+}
+
+@keyframes circle1 {
+    0% {
+        transform: translate(0, 0);
+        border-color: #bc7036;
+    }
+
+    40% {
+        transform: translate(0, 50px);
+        border-color: #f6b07b;
+    }
+
+    70% {
+        transform: translate(-30px, 0);
+        border-color: #f9a666;
+    }
+
+    100% {
+        transform: translate(0, 0);
+        border-color: #bc7036;
+    }
+}
+
+.circle2 {
+    border-radius: 100%;
+    border: 10px solid #f08ef0;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 40%;
+    left: 60%;
+    z-index: -1;
+    animation: circle2 10s infinite;
+}
+
+@keyframes circle2 {
+    0% {
+        transform: translate(0, 0);
+        border-color: #f08ef0;
+    }
+
+    40% {
+        transform: translate(40px, -30px);
+        border-color: #f5a0f5;
+    }
+
+    70% {
+        transform: translate(-30px, -50px);
+        border-color: #f5a0f5;
+    }
+
+    100% {
+        transform: translate(0, 0);
+        border-color: #f08ef0;
+    }
+}
+
+.square {
+    background-color: #98F053;
+    width: 100px;
+    height: 100px;
+    z-index: -1;
+    position: absolute;
+    top: 45%;
+    left: 10%;
+    animation: square 5s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite;
+}
+
+@keyframes square {
+    0% {
+        -webkit-transform: rotate(-360deg);
+        transform: rotate(-360deg);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+        opacity: 1;
+    }
 }
 
 /* ============
@@ -427,7 +511,6 @@ h2 {
 
 .contet-items {
     display: flex;
-    background-color: #31C840;
 }
 
 .contect-icon1 {
@@ -543,6 +626,34 @@ Title1&Celebrity
 
     .h1-1 {
         font-size: 4rem;
+    }
+
+    .triangle {
+        position: absolute;
+        top: 10%;
+        left: 0;
+        width: 0;
+        height: 0;
+        z-index: -1;
+        border-left: 200px solid transparent;
+        border-right: 200px solid transparent;
+        border-bottom: 300px solid #9DEBDD;
+        animation: triangle 15s infinite;
+    }
+
+    @keyframes triangle {
+        0% {
+            transform: translate(0, 0) rotate(0deg);
+
+        }
+
+        50% {
+            transform: translate(0, -20px) rotate(180deg);
+        }
+
+        100% {
+            transform: translate(0, 0) rotate(360deg);
+        }
     }
 
     /* ============
