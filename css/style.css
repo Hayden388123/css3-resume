@@ -58,8 +58,7 @@ Title1&Celebrity
 ==============*/
 .container1,
 .container2,
-.container3,
-.container4 {
+.container3 {
     width: 80%;
     margin: auto;
     padding: 1.875rem 0;
@@ -73,6 +72,18 @@ Title1&Celebrity
 .h1-1 {
     font-size: 1.25rem;
     font-weight: normal;
+}
+
+.circle1 {
+    border-radius: 100%;
+    border: 15px solid #f89e59;
+    width: 450px;
+    height: 450px;
+    position: absolute;
+    top: 0;
+    left: 80%;
+    z-index: -1;
+    animation: move 10s ease-in infinite;
 }
 
 /* ============
@@ -99,7 +110,7 @@ img {
     padding-bottom: 1.25rem;
 }
 
-.text {
+.text1 {
     width: 100%;
     padding: 1.5625rem 0;
 }
@@ -217,7 +228,7 @@ h2 {
 .Exp {
     font-size: 2.25rem;
     font-weight: normal;
-    margin-bottom: 1.25rem;
+    padding: 3.125rem;
     text-align: center;
 }
 
@@ -227,33 +238,76 @@ h2 {
 
 .Exp-list li {
     border-bottom: 1px solid black;
-    padding: 1.25rem 0;
-    position: relative;
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 120px;
+    gap: .9375rem;
+    padding: 20px 1.25rem 0 1.25rem;
+    align-items: center;
+    text-align: center;
 }
 
 .work-period {
-    padding-bottom: 1.25rem;
     font-size: .875rem;
+    width: 45%;
 
 }
 
 .company-name {
-    padding-bottom: .625rem;
     font-size: 1.25rem;
+    width: 45%;
 }
 
 .job-title {
     font-size: 1rem;
+    padding-top: .625rem;
+    width: 45%;
 }
 
-.company-logo img {
+.company-logo1 {
+    background: url(../imgs/amazon.png);
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    border-radius: 100%;
+    display: block;
+    justify-content: center;
+}
+
+.company-logo2 {
+    background: url(../imgs/apple.png);
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    border-radius: 100%;
+}
+
+.company-logo3 {
+    background: url(../imgs/meta.png);
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    border-radius: 100%;
+}
+
+.company-logo4 {
+    background: url(../imgs/microsoft.png);
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    border-radius: 100%;
+}
+
+/* .company-logo img {
     width: auto;
     height: 50%;
     position: absolute;
     right: 20px;
     bottom: 30px;
     border-radius: 100%;
-}
+} */
 
 /* ============
    Portfolios
@@ -262,17 +316,188 @@ h2 {
     background-color: var(--secondary-color);
 }
 
+.por {
+    font-size: 2.25rem;
+    font-weight: normal;
+    padding: 3.125rem;
+    text-align: center;
+}
+
 .grid-container {
+    width: 90%;
     display: grid;
     grid-template-columns: repeat(2, 49%);
     grid-template-rows: repeat(4, 200px);
     gap: 10px;
+    padding: 20px 0 120px 0;
+    margin: auto;
+}
+
+.grid-item1 {
+    background: url(../imgs/people1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.grid-item2 {
+    background: url(../imgs/people2.jpg) no-repeat;
+    background-size: cover;
+}
+
+.grid-item3 {
+    background: url(../imgs/photo1.jpg) no-repeat;
+    background-size: cover;
+}
+
+.grid-item4 {
+    background: url(../imgs/photo3.jpg) no-repeat;
+    background-size: cover;
+}
+
+.grid-item5 {
+    background: url(../imgs/photo2.jpg) no-repeat;
+    background-size: cover;
+}
+
+.grid-item6 {
+    background: url(../imgs/japan1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.grid-item7 {
+    background: url(../imgs/sea.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.grid-item8 {
+    background: url(../imgs/japan.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* ============
+   Contect me
+==============*/
+.section5 {
+    background: linear-gradient(to bottom, #BE53F0, #E49EFD);
+}
+
+.container5 {
+    width: 90%;
+    margin: auto;
+    padding: 1.875rem 0;
+}
+
+.text2 {
+    width: 100%;
+    text-align: center;
+}
+
+.contect-me {
+    font-size: 2.25rem;
+    font-weight: normal;
+    text-shadow: 0 4px 4px rgb(0, 0, 0, 0.25);
+    padding-bottom: 20px;
+}
+
+.p5 {
+    color: white;
+    padding-bottom: 10px;
+}
+
+/* .contect-list {
+    list-style: none;
+}
+
+.contect-list li {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 40px;
+    padding-bottom: 20px;
+} */
+.contect-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contet-items {
+    display: flex;
+    background-color: #31C840;
+}
+
+.contect-icon1 {
+    background: url(../imgs/location-dot-solid-full.svg) no-repeat;
+}
+
+.contect-icon2 {
+    background: url(../imgs/phone-solid-full.svg) no-repeat;
+}
+
+.contect-icon3 {
+    background: url(../imgs/envelope-solid-full.svg) no-repeat;
+}
+
+.contect-icon1,
+.contect-icon2,
+.contect-icon3 {
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+
+}
+
+.p6 {
+    color: white;
+    text-align: left;
+}
+
+form {
+    width: 100%;
+    background-color: #FFFFFF;
+    border-radius: .625rem;
+    border: 1px solid #F1F1F1;
+    box-shadow: 4px 4px 10px rgb(0, 0, 0, 0.25);
+    padding: 20px;
+}
+
+label,
+input,
+textarea {
+    display: block;
+    width: 80%;
+    margin: auto;
     padding: 10px;
 }
 
-.grid-item {
-    background-color: #98F053;
-    overflow: hidden;
+input {
+    height: 50px;
+}
+
+input,
+textarea {
+    padding: 8px;
+    background-color: #EEEEEE;
+    border-radius: 10px;
+    border: none;
+}
+
+textarea {
+    resize: none;
+}
+
+/* ============
+   Footer
+==============*/
+footer {
+    background-color: var(--main-color);
+    padding: 1.875rem;
+    text-align: center;
 }
 
 /**** 電腦 ****/
@@ -350,16 +575,17 @@ Photo&About
    Experience 
 ==============*/
     .Exp-list li {
-        display: flex;
+        flex-wrap: nowrap;
         flex-direction: row;
-        align-items: center;
+        height: 100px;
+        gap: 20px;
+        justify-content: center;
     }
 
     .work-period,
     .company-name,
     .job-title {
-        padding-left: 50px;
-        padding-bottom: 0;
+        width: 15%;
     }
 
 
@@ -386,5 +612,17 @@ Photo&About
     .merged-2 {
         grid-column: 3 / 5;
         grid-row: 2 / 4;
+    }
+
+    /* ============
+   Contect me
+==============*/
+    .text2 {
+        padding: 1.875rem;
+    }
+
+    .contect-list li {
+        justify-content: center;
+        padding-right: 1.875rem;
     }
 }
