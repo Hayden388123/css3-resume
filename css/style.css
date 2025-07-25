@@ -1,0 +1,390 @@
+/* 全域 */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-font-family: "Inter", sans-serif;
+    --main-color: #D9D9D9;
+    --secondary-color: #EFEFEF;
+}
+
+body {
+    font-family: var(--main-font-family);
+}
+
+header {
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px;
+
+}
+
+.logo {
+    border: 1px solid black;
+    text-align: center;
+    padding: 15px 40px;
+    font-size: 36px;
+
+}
+
+.bar {
+    font-size: 40px;
+}
+
+.navbar {
+    width: 100%;
+}
+
+.menu-list {
+    list-style: none;
+}
+
+.menu-list li {
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+}
+
+/* ============
+Title1&Celebrity 
+==============*/
+.container1,
+.container2,
+.container3,
+.container4 {
+    width: 80%;
+    margin: auto;
+    padding: 1.875rem 0;
+}
+
+.celebrity {
+    font-size: .875rem;
+    margin-bottom: .625rem;
+}
+
+.h1-1 {
+    font-size: 1.25rem;
+    font-weight: normal;
+}
+
+/* ============
+Photo&About
+==============*/
+.photo1 {
+    width: 80%;
+    height: 25rem;
+    margin: auto;
+    margin-bottom: 1.25rem;
+    overflow: hidden;
+    box-shadow: -0.9375rem .9375rem 0 #FFB2B2;
+}
+
+img {
+    display: block;
+    margin-left: -4.375rem;
+    margin-top: -1.875rem;
+}
+
+.about {
+    width: 95%;
+    margin: auto;
+    padding-bottom: 1.25rem;
+}
+
+.text {
+    width: 100%;
+    padding: 1.5625rem 0;
+}
+
+.p1 {
+    font-size: 1.25rem;
+    padding-bottom: .625rem;
+}
+
+.p2 {
+    font-size: .875rem;
+    padding-bottom: .625rem;
+    line-height: 1.5625rem;
+}
+
+.school {
+    width: 100%;
+}
+
+h2 {
+    font-weight: normal;
+    font-size: 1.25rem;
+    padding-bottom: .625rem;
+}
+
+.school {
+    padding-bottom: 1.25rem;
+}
+
+.degree {
+    background-color: var(--secondary-color);
+    padding: .625rem;
+    margin-bottom: 1.25rem;
+    border-radius: .625rem;
+}
+
+.p3 {
+    font-size: 1rem;
+    padding-bottom: .625rem;
+}
+
+.p4 {
+    font-size: .875rem;
+    color: #615D5D;
+}
+
+.skill-list {
+    list-style: none;
+}
+
+.skill-list li {
+    display: flex;
+    margin-bottom: 1.25rem;
+    justify-content: space-between;
+}
+
+.skill-name {
+    font-size: 1.125rem;
+}
+
+.skill-bar {
+    width: 12.5rem;
+    display: inline-block;
+    height: 1.25rem;
+    background-color: var(--main-color);
+    box-shadow: 0px .125rem .125rem rgba(0, 0, 0, 0.25) inset;
+    border-radius: 3.125rem;
+    position: relative;
+}
+
+.skill-percent {
+    height: 1.125rem;
+    border-radius: 3.125rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: .8125rem;
+}
+
+.skill-html {
+    width: 90%;
+    background: linear-gradient(to right, #98F053, #31C840);
+}
+
+.skill-css {
+    width: 85%;
+    background: linear-gradient(to right, #D32B2B, #EC9696);
+}
+
+.skill-js {
+    width: 60%;
+    background: linear-gradient(to right, #53CAF0, #315BC8);
+}
+
+.skill-php {
+    width: 40%;
+    background: linear-gradient(to right, #F8A80D, #FDCD70);
+}
+
+.skill-mysql {
+    width: 30%;
+    background: linear-gradient(to right, #BE53F0, #E49EFD);
+}
+
+/* ============
+   Experience 
+==============*/
+.section3 {
+    background-color: var(--main-color);
+}
+
+.Exp {
+    font-size: 2.25rem;
+    font-weight: normal;
+    margin-bottom: 1.25rem;
+    text-align: center;
+}
+
+.Exp-list {
+    list-style: none;
+}
+
+.Exp-list li {
+    border-bottom: 1px solid black;
+    padding: 1.25rem 0;
+    position: relative;
+}
+
+.work-period {
+    padding-bottom: 1.25rem;
+    font-size: .875rem;
+
+}
+
+.company-name {
+    padding-bottom: .625rem;
+    font-size: 1.25rem;
+}
+
+.job-title {
+    font-size: 1rem;
+}
+
+.company-logo img {
+    width: auto;
+    height: 50%;
+    position: absolute;
+    right: 20px;
+    bottom: 30px;
+    border-radius: 100%;
+}
+
+/* ============
+   Portfolios
+==============*/
+.section4 {
+    background-color: var(--secondary-color);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 49%);
+    grid-template-rows: repeat(4, 200px);
+    gap: 10px;
+    padding: 10px;
+}
+
+.grid-item {
+    background-color: #98F053;
+    overflow: hidden;
+}
+
+/**** 電腦 ****/
+@media screen and (min-width:1024px) {
+    .logo {
+        padding: 20px 80px;
+    }
+
+    .bar {
+        display: none
+    }
+
+    .navbar {
+        width: 40%;
+    }
+
+    .menu-list {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .menu-list li {
+        font-size: 24px;
+        text-align: center;
+        padding: 20px;
+    }
+
+    /* ============
+Title1&Celebrity 
+==============*/
+    .container1 {
+        width: 70%;
+        padding: 6.25rem 0;
+    }
+
+    .celebrity {
+        font-size: 3rem;
+    }
+
+    .h1-1 {
+        font-size: 4rem;
+    }
+
+    /* ============
+Photo&About
+==============*/
+    .container2 {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        width: 70%;
+    }
+
+    .photo1 {
+        width: 30%;
+        margin: 0;
+    }
+
+    .about {
+        background-color: #FFE3E3;
+        width: 45%;
+        padding: 0 1.5rem;
+
+    }
+
+    .skill-list {
+        width: 70%;
+    }
+
+    /* ============
+   Experience 
+==============*/
+    .Exp-list li {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .work-period,
+    .company-name,
+    .job-title {
+        padding-left: 50px;
+        padding-bottom: 0;
+    }
+
+
+    .company-logo img {
+        bottom: 5px;
+        right: 700px;
+        height: 50px;
+
+    }
+
+    /* ============
+   Portfolios
+==============*/
+    .grid-container {
+        grid-template-columns: repeat(4, 24%);
+        grid-template-rows: repeat(3, 200px);
+    }
+
+    .merged-1 {
+        grid-column: 2;
+        grid-row: 1 / 3;
+    }
+
+    .merged-2 {
+        grid-column: 3 / 5;
+        grid-row: 2 / 4;
+    }
+}
