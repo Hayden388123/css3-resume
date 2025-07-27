@@ -13,6 +13,11 @@
     --secondary-color: #EFEFEF;
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
 body {
     font-family: var(--main-font-family);
 }
@@ -153,20 +158,36 @@ Title1&Celebrity
     position: absolute;
     top: 45%;
     left: 10%;
-    animation: square 5s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite;
+    animation: square 10s infinite linear;
 }
 
 @keyframes square {
     0% {
-        -webkit-transform: rotate(-360deg);
-        transform: rotate(-360deg);
-        opacity: 0;
+        transform: rotate(0deg);
+        background-color: pink;
+    }
+
+    25% {
+        transform: rotate(90deg);
+        border-radius: 100%;
+        background-color: orange;
+    }
+
+    50% {
+        transform: rotate(180deg);
+        border-radius: 0 100% 100% 0;
+        background-color: tomato;
+    }
+
+    75% {
+        transform: rotate(270deg);
+        border-radius: 50% 50% 60% 60% / 60% 60% 40% 40%;
+        background-color: gray;
     }
 
     100% {
-        -webkit-transform: rotate(0);
-        transform: rotate(0);
-        opacity: 1;
+        transform: rotate(360deg);
+        background-color: pink;
     }
 }
 
@@ -276,26 +297,81 @@ h2 {
 .skill-html {
     width: 90%;
     background: linear-gradient(to right, #98F053, #31C840);
+    animation: loading1 2s ease-out forwards;
+}
+
+@keyframes loading1 {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 90%;
+    }
 }
 
 .skill-css {
     width: 85%;
     background: linear-gradient(to right, #D32B2B, #EC9696);
+    animation: loading2 2s ease-out forwards;
+}
+
+@keyframes loading2 {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 85%;
+    }
 }
 
 .skill-js {
     width: 60%;
     background: linear-gradient(to right, #53CAF0, #315BC8);
+    animation: loading3 2s ease-out forwards;
+}
+
+@keyframes loading3 {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 60%;
+    }
 }
 
 .skill-php {
     width: 40%;
     background: linear-gradient(to right, #F8A80D, #FDCD70);
+    animation: loading4 2s ease-out forwards;
+}
+
+@keyframes loading4 {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 40%;
+    }
 }
 
 .skill-mysql {
     width: 30%;
     background: linear-gradient(to right, #BE53F0, #E49EFD);
+    animation: loading5 2s ease-out forwards;
+}
+
+@keyframes loading5 {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 30%;
+    }
 }
 
 /* ============
@@ -423,6 +499,7 @@ h2 {
 .grid-item2 {
     background: url(../imgs/people2.jpg) no-repeat;
     background-size: cover;
+    background-position: center bottom;
 }
 
 .grid-item3 {
@@ -433,6 +510,7 @@ h2 {
 .grid-item4 {
     background: url(../imgs/photo3.jpg) no-repeat;
     background-size: cover;
+    background-position: right bottom;
 }
 
 .grid-item5 {
@@ -455,7 +533,7 @@ h2 {
 .grid-item8 {
     background: url(../imgs/japan.jpg) no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center top;
 }
 
 /* ============
@@ -566,8 +644,18 @@ footer {
 
 /**** 電腦 ****/
 @media screen and (min-width:1024px) {
+    header {
+        height: 115px;
+        padding: 0;
+    }
+
     .logo {
         padding: 20px 80px;
+        margin-left: 20px;
+    }
+
+    .logo:hover {
+        background-color: #615D5D;
     }
 
     .bar {
@@ -575,22 +663,30 @@ footer {
     }
 
     .navbar {
-        width: 40%;
+        width: 60%;
+        height: 100%;
     }
 
     .menu-list {
         display: flex;
         flex-direction: row;
         list-style: none;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
-
+        height: 100%;
     }
 
     .menu-list li {
+        height: 100%;
         font-size: 24px;
         text-align: center;
-        padding: 20px;
+        display: flex;
+        align-items: center;
+        padding: 20px 30px;
+    }
+
+    .menu-list li:hover {
+        background-color: #615D5D;
     }
 
     /* ============
@@ -696,6 +792,53 @@ Photo&About
         grid-template-rows: repeat(3, 200px);
     }
 
+    .grid-item1,
+    .grid-item2,
+    .grid-item3,
+    .grid-item4,
+    .grid-item5,
+    .grid-item6,
+    .grid-item7,
+    .grid-item8 {
+        transition: transform 0.5s linear;
+    }
+
+    .grid-item6 {
+        background-position: center 15%;
+    }
+
+    .grid-item1:hover {
+        transform: scale(1.05)
+    }
+
+    .grid-item2:hover {
+        transform: scale(1.05)
+    }
+
+    .grid-item3:hover {
+        transform: scale(1.05)
+    }
+
+    .grid-item4:hover {
+        transform: scale(1.05)
+    }
+
+    .grid-item5:hover {
+        transform: scale(1.05)
+    }
+
+    .grid-item6:hover {
+        transform: scale(1.05)
+    }
+
+    .grid-item7:hover {
+        transform: scale(1.05)
+    }
+
+    .grid-item8:hover {
+        transform: scale(1.05)
+    }
+
     .merged-1 {
         grid-column: 2;
         grid-row: 1 / 3;
@@ -716,5 +859,17 @@ Photo&About
     .contect-list li {
         justify-content: center;
         padding-right: 1.875rem;
+    }
+
+    .p6:hover {
+        color: rgb(233, 233, 233);
+    }
+
+    input:hover {
+        background-color: #d5c7c7;
+    }
+
+    textarea:hover {
+        background-color: #d5c7c7;
     }
 }
