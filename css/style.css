@@ -174,18 +174,14 @@ Title1&Celebrity
 Photo&About
 ==============*/
 .photo1 {
-    width: 80%;
+    background: url(../imgs/designer.jpg) no-repeat;
+    background-position: 60% 40%;
+    width: 50%;
     height: 25rem;
     margin: auto;
     margin-bottom: 1.25rem;
     overflow: hidden;
     box-shadow: -0.9375rem .9375rem 0 #FFB2B2;
-}
-
-img {
-    display: block;
-    margin-left: -4.375rem;
-    margin-top: -1.875rem;
 }
 
 .about {
@@ -484,33 +480,17 @@ h2 {
     font-size: 2.25rem;
     font-weight: normal;
     text-shadow: 0 4px 4px rgb(0, 0, 0, 0.25);
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 .p5 {
     color: white;
-    padding-bottom: 10px;
 }
 
-/* .contect-list {
-    list-style: none;
-}
-
-.contect-list li {
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    padding-left: 40px;
-    padding-bottom: 20px;
-} */
 .contect-list {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.contet-items {
-    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
 }
 
 .contect-icon1 {
@@ -532,12 +512,13 @@ h2 {
     width: 25px;
     height: 25px;
     margin-right: 10px;
+    margin-bottom: 5px;
 
 }
 
 .p6 {
     color: white;
-    text-align: left;
+    padding-bottom: 10px;
 }
 
 form {
@@ -729,7 +710,7 @@ Photo&About
    Contect me
 ==============*/
     .text2 {
-        padding: 1.875rem;
+        padding: 1.25rem;
     }
 
     .contect-list li {
