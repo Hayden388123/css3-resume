@@ -568,7 +568,7 @@ h2 {
 .contect-list {
     display: flex;
     justify-content: center;
-    padding-bottom: 20px;
+    padding: 20px;
 }
 
 .contect-icon1 {
@@ -852,6 +852,15 @@ Photo&About
     /* ============
    Contect me
 ==============*/
+    .container5 {
+        display: flex;
+    }
+
+    .word {
+        margin-right: 100px;
+        width: 30%;
+    }
+
     .text2 {
         padding: 1.25rem;
     }
