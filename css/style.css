@@ -9,7 +9,7 @@
 
 :root {
     --main-font-family: "Inter", sans-serif;
-    --main-color: #D9D9D9;
+    --main-color: #dfe9ec;
     --secondary-color: #EFEFEF;
 }
 
@@ -74,8 +74,8 @@ Title1&Celebrity
     margin-bottom: .625rem;
 }
 
-.h1-1 {
-    font-size: 1.25rem;
+.h2-1 {
+    font-size: 3rem;
     font-weight: normal;
 }
 
@@ -195,14 +195,14 @@ Title1&Celebrity
 Photo&About
 ==============*/
 .photo1 {
-    background: url(../imgs/designer.jpg) no-repeat;
-    background-position: 60% 40%;
+    background: url(../imgs/122583.jpg) no-repeat;
+    background-size: cover;
     width: 50%;
     height: 25rem;
     margin: auto;
     margin-bottom: 1.25rem;
     overflow: hidden;
-    box-shadow: -0.9375rem .9375rem 0 #FFB2B2;
+    box-shadow: -0.9375rem .9375rem 0 #256f3f;
 }
 
 .about {
@@ -217,12 +217,7 @@ Photo&About
 }
 
 .p1 {
-    font-size: 1.25rem;
-    padding-bottom: .625rem;
-}
-
-.p2 {
-    font-size: .875rem;
+    font-size: 1rem;
     padding-bottom: .625rem;
     line-height: 1.5625rem;
 }
@@ -242,7 +237,7 @@ h2 {
 }
 
 .degree {
-    background-color: var(--secondary-color);
+    background-color: var(--main-color);
     padding: .625rem;
     margin-bottom: 1.25rem;
     border-radius: .625rem;
@@ -540,7 +535,7 @@ h2 {
    Contect me
 ==============*/
 .section5 {
-    background: linear-gradient(to bottom, #BE53F0, #E49EFD);
+    background: linear-gradient(to bottom, #8bd196, #cff1d5);
 }
 
 .container5 {
@@ -568,7 +563,7 @@ h2 {
 .contect-list {
     display: flex;
     justify-content: center;
-    padding: 20px;
+    padding: 10px;
 }
 
 .contect-icon1 {
@@ -749,7 +744,7 @@ Photo&About
     }
 
     .about {
-        background-color: #FFE3E3;
+        background-color: #cbf0d1;
         width: 45%;
         padding: 0 1.5rem;
 
